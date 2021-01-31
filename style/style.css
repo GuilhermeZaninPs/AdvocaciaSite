@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+
+
+}
+.nav-bar {    
+    background-color: cadetblue;
+
+}
+
+h4 {
+    color: black;
+    max-width: 5px;
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 10%;
+    line-height: .9;
+}
+
+nav {
+    float: right;
+    font-size: 30px;
+    margin-right: 10%;
+    margin-top: 25px;
+}
+
+a {
+    background-color: chartreuse;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-left: 10px;
+}
