@@ -4,7 +4,7 @@
 
 }
 .nav-bar {    
-    background-color: cadetblue;
+    background-color: #e5f58b;
 
 }
 
@@ -15,6 +15,7 @@ h4 {
     display: inline-block;
     margin-left: 10%;
     line-height: .9;
+    padding: 5px;
 }
 
 nav {
@@ -25,9 +26,73 @@ nav {
 }
 
 a {
-    background-color: chartreuse;
+    background-color: #e5f58b;
     text-decoration: none;
     color: black;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+a:hover {
+    background-color: #ddf74e;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.introducer {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    max-width: 100%;
+    height: 500px;
+}
+
+img {
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 15px;
+}
+
+h2 {
+    margin-left: 27%;
+    width: 400px;
+    font-size: 50px;
+    padding: 20px;
+}
+.about-me-description {
+    margin-left: 20%;
+    width: 500px;
+    font-size: 40px;
+    text-align: justify;
+}
+hr {
+    margin-top: 50px;
+}
+.actuation-h {
+    margin-top: 70px;
+    margin-left: 40%;
+}
+
+
+#legal-document {
+    float: none;
+    width: 100px;
+    height: 100px;
+}
+
+#police-hat{
+
+    float: none;
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.inq, .action {
+    display: inline-block;
+    margin-left: 22%;
+    font-size: 40px;
+    text-align: justify;
 }
