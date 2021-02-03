@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Junior Advocacia</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
     <div class="nav-bar">
-        <header>
-            <h4>Junior Zanin Advocacia</h4>
-            <nav>
-                <a href="#">Quem Sou</a>
-                <a href="#">Atuação</a>
-                <a href="#">Contato</a>
-                <a href="#">Onde Estou</a>
-            </nav>
-        </header>
+      <header>
+        <h4>Junior Zanin Advocacia</h4>
+        <nav>
+          <a href="#about-me">Quem Sou</a>
+          <a href="#actuation">Atuação</a>
+          <a href="#contact">Contato</a>
+          <a href="#">Onde Estou</a>
+        </nav>
+      </header>
     </div>
 
     <section class="introducer"></section>
-    <section class="about-me">
-        <img src="./images/picture-lawer.jpg" alt="">
-        <div class="description">
-            <h2>Quem sou eu</h2>
-            <p class="about-me-description">Atuei por mais de 25 anos como servidor público. Ampla experiência na área criminal. Sou formado a mais de 10 anos, com pós-graduação em ações penais.</p>
-        </div>
+    <section id="about-me">
+      <img src="./images/picture-lawer.jpg" alt="" />
+      <div class="description">
+        <h2>Quem sou eu</h2>
+        <p class="about-me-description">
+          Atuei por mais de 25 anos como servidor público. Ampla experiência na
+          área criminal. Sou formado a mais de 10 anos, com pós-graduação em
+          ações penais.
+        </p>
+      </div>
     </section>
-    <hr>
+    <hr />
     <section class="actuation">
         <div>
             <h2 class="actuation-h">Atuação</h2>
@@ -40,25 +44,46 @@
         </div>
     </section>
     <hr>
-    <section class="contact">
-        <div class="enter-contact">
-            <h2>Contato</h2>
-            <h5>Clique nos links abaixo</h5>
-            <p>Email</p>
-            <a href="mailto:advjuniorzanin@gmail.com">advjuniorzanin@gmail.com</a>
-            <p>WhatsApp</p>
-            <a href="https://wa.me/5517982171819?text=Você poderia me ajudar?">(17) 9 8217-1819</a>
-        </div>
+   
+    <section id="contact">
+      <div class="enter-contact">
+        <h2>Contato</h2>
+        <h5>Clique nos links abaixo</h5>
+        <p>Email</p>
+        <a href="mailto:advjuniorzanin@gmail.com">advjuniorzanin@gmail.com</a>
+        <p>WhatsApp</p>
+        <a href="https://wa.me/5517982171819?text=Você poderia me ajudar?"
+          >(17) 9 8217-1819</a
+        >
+        <h5 id="message-h">Ou preencha os campos abaixo</h5>
+        <form method="GET" action="">
+          <input type="text" name="fname" placeholder="Primeiro nome" />
+          <input type="text" name="lname" placeholder="Último nome" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea
+            name="message"
+            placeholder="Escreva sua mensagem"
+          ></textarea>
+          <input type="submit" />
+        </form>
+      </div>
     </section>
-    <hr>
+    <hr />
 
     <footer>
-        <p>Create by Guilherme Zanin</p>
-        <h5>Copyright of images and icons</h5>
-        <a href="https://www.freepik.com/vectors/job">Job vector created by stories - www.freepik.com</a> <br>
-        <a href="https://www.freepik.com/photos/wood">Wood photo created by Racool_studio - www.freepik.com</a>
-        <a href="https://www.streamlineicons.com/">[Free Icons from the Streamline Icons Pack](https://www.streamlineicons.com/)</a>
-
+      <p>Create by Guilherme Zanin</p>
+      <h5>Copyright of images and icons</h5>
+      <a href="https://www.freepik.com/vectors/job"
+        >Job vector created by stories - www.freepik.com</a
+      >
+      <br />
+      <a href="https://www.freepik.com/photos/wood"
+        >Wood photo created by Racool_studio - www.freepik.com</a
+      >
+      <a href="https://www.streamlineicons.com/"
+        >[Free Icons from the Streamline Icons
+        Pack](https://www.streamlineicons.com/)</a
+      >
     </footer>
-</body>
+  </body>
 </html>
