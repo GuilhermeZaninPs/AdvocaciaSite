@@ -178,18 +178,34 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-footer h5 {
+#mapid{
+    width: 880px;
+    height: 480px;
+    margin: auto;
+    
+}
+#location p {
     margin-left: 40%;
-    margin-top: 0;
-    padding: 0;
+    font-size: 20px;
+    width: 680px;
+    margin-bottom: 50px;
+
+}
+
+footer .about-site {
+    margin-left: 42%;
+    font-size: 20px;
+    font-weight: normal;
+}
+footer p a {
     font-weight: bold;
+    margin-left: 0;
 }
 
 footer p {
     display: block;
     margin-left: 40%;
 }
-
 footer a {
     background-color: white;
     margin-left: 35%;

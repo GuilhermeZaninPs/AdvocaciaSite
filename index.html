@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Junior Advocacia</title>
     <link rel="stylesheet" href="./style/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
   </head>
   <body>
     <div class="nav-bar">
@@ -33,18 +43,28 @@
     </section>
     <hr />
     <section id="actuation">
-        <div>
-            <h2 class="actuation-h">Atuação</h2>
-            <div class="icons">
-                <img class="icons-actuation" id="police-hat" src="./images/police-hat.png" alt="">
-                <img class="icons-actuation" id="legal-document" src="./images/legal-document.png" alt="">
-                <p class="inq">Inquérito Policial</p>
-                <p class="action">Ação Penal</p>
-            </div>
+      <div>
+        <h2 class="actuation-h">Atuação</h2>
+        <div class="icons">
+          <img
+            class="icons-actuation"
+            id="police-hat"
+            src="./images/police-hat.png"
+            alt=""
+          />
+          <img
+            class="icons-actuation"
+            id="legal-document"
+            src="./images/legal-document.png"
+            alt=""
+          />
+          <p class="inq">Inquérito Policial</p>
+          <p class="action">Ação Penal</p>
         </div>
+      </div>
     </section>
-    <hr>
-   
+    <hr />
+
     <section id="contact">
       <div class="enter-contact">
         <h2>Contato</h2>
@@ -69,21 +89,42 @@
       </div>
     </section>
     <hr />
+    <section id="location">
+      <div><h2>Onde estou</h2></div>
+      <div id="mapid" class="animate-appear"></div>
+      <p>Rua Miguel Azem Azem, 327 <br> Parque Residencial Damha V <br>São José do Rio Preto - SP</p>
+    </section>
+    <hr>
 
     <footer>
-      <p>Create by Guilherme Zanin</p>
+      <p>Create by <a href="#">Guilherme Zanin</a></p>
+      <p class="about-site"><a href="#">Sobre</a> este site</p>
+      <!--
       <h5>Copyright of images and icons</h5>
       <a href="https://www.freepik.com/vectors/job"
-        >Job vector created by stories - www.freepik.com</a
-      >
+        >Job vector created by stories - www.freepik.com</a>
       <br />
       <a href="https://www.freepik.com/photos/wood"
-        >Wood photo created by Racool_studio - www.freepik.com</a
-      >
+        >Wood photo created by Racool_studio - www.freepik.com</a>
       <a href="https://www.streamlineicons.com/"
         >[Free Icons from the Streamline Icons
-        Pack](https://www.streamlineicons.com/)</a
-      >
-    </footer>
+        Pack](https://www.streamlineicons.com/)</a>
+      -->
+      </footer>
+   
+    <script>
+      // create map
+        const map = L.map('mapid').setView([-20.8102278,-49.3313466], 16);
+
+        //create and add tilelayer
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        L
+        .marker([-20.8102278,-49.3313466])
+        .addTo(map)
+        .bindPopup()
+
+    </script>
   </body>
 </html>
