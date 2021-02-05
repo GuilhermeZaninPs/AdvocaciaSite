@@ -1,0 +1,23 @@
+h2 {
+    margin-left: 40%;
+    width: 600px;
+    font-size: 40px;
+    padding: 20px;
+}
+.copyright {
+    margin-left: 30%;
+}
+
+p {
+    font-size: 25px;
+    margin: auto;
+    width: 700px;
+    text-align: justify;
+}
+
+
+.links-copyright a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
