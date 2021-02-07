@@ -21,3 +21,27 @@ p {
     font-size: 20px;
     text-align: center;
 }
+
+#back {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    background: #e5f58b;
+
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 30px;
+}
+#back:hover {
+    background: #ddf74e;
+}
+
+a {
+    color: black;
+}
+
+.github:hover {
+    font-size: 27px;
+}

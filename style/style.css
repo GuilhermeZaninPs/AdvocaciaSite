@@ -3,9 +3,13 @@
 
 
 }
-.nav-bar {    
+.nav-bar {   
     background-color: #e5f58b;
-    /*position: fixed;*/
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
 
 }
 
@@ -47,22 +51,23 @@ a:hover {
     max-width: 100%;
     height: 560px;
 }
-
-img {
-    margin-top: 20px;
-    width: 400px;
-    height: 400px;
-    margin-right: 20px;
-    float: right;
-    border-radius: 15px;
-}
-
 h2 {
     margin-left: 40%;
+    margin-bottom: 10px;
     width: 400px;
     font-size: 50px;
     padding: 20px;
 }
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    float: right;
+    border-radius: 15px;
+}
+
+
 .about-me-description {
     margin-left: 30%;
     width: 500px;
@@ -70,7 +75,7 @@ h2 {
     text-align: justify;
 }
 hr {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .actuation-h {
     margin-top: 6px;
@@ -180,7 +185,7 @@ input[type="submit"]:hover {
 
 #mapid{
     width: 880px;
-    height: 480px;
+    height: 380px;
     margin: auto;
     
 }
@@ -188,7 +193,6 @@ input[type="submit"]:hover {
     margin-left: 40%;
     font-size: 20px;
     width: 680px;
-    margin-bottom: 50px;
 
 }
 
@@ -211,3 +215,35 @@ footer a {
     margin-left: 35%;
     padding: 0;
 }
+
+
+@media screen and (max-width: 930px){
+    h4 {
+        margin-left: 45%;
+    }
+
+    .actuation-h {
+        margin-left: 45%;
+    }
+    .action {
+        margin-left: 15%;
+    }
+    .enter-contact h2 {
+        margin-left: 45%;
+    }
+    h5 {
+        margin-left: 50%;
+    }
+    input {
+        margin-left: 30%;
+    }
+    textarea {
+        margin-left: 30%;
+    }
+    #mapid {
+        margin-left: 5%;
+    }
+}
+
+
+
