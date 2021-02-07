@@ -192,7 +192,6 @@ input[type="submit"]:hover {
 #location p {
     margin-left: 40%;
     font-size: 20px;
-    width: 680px;
 
 }
 
@@ -219,31 +218,63 @@ footer a {
 
 @media screen and (max-width: 930px){
     h4 {
-        margin-left: 45%;
+        margin-left: 35%;
+        padding: 10px;
+        max-width: 100%;
     }
-
+    nav {
+        margin-top: 1px;
+    }
+    #about-me h2 {
+        margin-left: 35%;
+    }
     .actuation-h {
-        margin-left: 45%;
+        margin-left: 35%;
     }
     .action {
         margin-left: 15%;
     }
     .enter-contact h2 {
-        margin-left: 45%;
+        margin-left: 35%;
     }
     h5 {
-        margin-left: 50%;
+        margin-left: 40%;
+    }
+    .enter-contact p {
+        margin-left: 20%;
     }
     input {
-        margin-left: 30%;
+        margin-left: 20%;
     }
     textarea {
-        margin-left: 30%;
+        margin-left: 20%;
+    }
+    #location h2 {
+        margin-left: 35%;
     }
     #mapid {
-        margin-left: 5%;
+        width: 800px;
+        height: 350px;
+    }
+    #location p {
+        margin-left: 35%;
+    }
+
+
+@media screen and (max-width: 800px) {
+    #mapid{
+        width: 700px;
+        height: 280px;
+        margin-left: 10%;
+    }
+    
+}
+@media screen and (max-width: 425px) {
+    nav {
+        margin: auto;
+    }
+    nav a {
+        display: block;
+        margin-left: 50%;
     }
 }
-
-
-
